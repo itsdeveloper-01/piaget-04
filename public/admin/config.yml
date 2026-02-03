@@ -34,8 +34,63 @@ collections:
 
       - file: "content/home/vision-mission.md"
         label: "Visión y Misión"
-        name: "vision-mission"
+        name: "vision_mission"
         fields:
           - { label: "Headline arriba", name: "headlineTop", widget: "string" }
           - { label: "Headline abajo", name: "headlineBottom", widget: "string" }
           - { label: "Contenido", name: "body", widget: "markdown" }
+
+      - file: "content/home/levels.md"
+        label: "Niveles"
+        name: "levels"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - label: "Niveles (5)"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Descripción", name: "desc", widget: "string" }
+          - { label: "Título logros", name: "achievementsTitle", widget: "string" }
+          - { label: "Texto logros", name: "achievementsBody", widget: "string" }
+
+      - file: "content/home/community.md"
+        label: "Community"
+        name: "community"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - label: "Comentarios"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Origen", name: "source", widget: "select", options: ["facebook", "instagram"] }
+              - { label: "Autor", name: "author", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+
+      - file: "content/home/testimonials.md"
+        label: "Testimonials"
+        name: "testimonials"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - label: "Reseñas"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+
+      - file: "content/home/location.md"
+        label: "Ubicación"
+        name: "location"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Google Maps Embed URL", name: "googleMapsEmbedUrl", widget: "string" }
+
+      - file: "content/home/contact.md"
+        label: "Contacto"
+        name: "contact"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "WhatsApp (con país)", name: "whatsappNumber", widget: "string" }
+          - { label: "Correo", name: "email", widget: "string" }
+          - { label: "Texto", name: "body", widget: "markdown" }

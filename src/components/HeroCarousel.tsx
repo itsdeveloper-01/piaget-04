@@ -28,7 +28,7 @@ export default function HeroCarousel({ slides }: { slides: Slide[] }) {
     <section className="relative" id="top">
       <div className="relative h-[70vh] min-h-[520px] w-full">
         <Image src={s.image} alt={s.title} fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/60 via-brand-blue/20 to-transparent" />
       </div>
 
       <div className="absolute inset-0 flex items-end">
